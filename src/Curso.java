@@ -8,4 +8,19 @@ public class Curso {
         this.alumnos = new ArrayList<Alumno>();
 
     }
+
+    public String getNombreCurso() {
+        return nombreCurso;
+    }
+
+    public ArrayList<Alumno> getAlumnos() {
+        return alumnos;
+    }
+
+    public void setNombreCurso(String nombreCurso) {
+        this.nombreCurso = nombreCurso;
+    }
+
+
+
 }
