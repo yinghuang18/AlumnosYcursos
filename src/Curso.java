@@ -44,5 +44,15 @@ public class Curso {
         System.out.println("El alumno no estpa registrado en el curso");
     }
 
+    public void comprobarAlumno(Alumno alumnoPertenece) {
+        for (Alumno alumno : this.ListaAlumnos) {
+            if (alumno.getMatricula().equals(alumnoPertenece.getMatricula())) {
+                System.out.println("El alumno pertenece al curso");
+                return;
+            }
+        }
+        System.out.println("El alumno no pertenece al curso");
+    }
+
 
 }
