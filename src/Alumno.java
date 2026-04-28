@@ -34,11 +34,28 @@ public class Alumnos {
             return carrera;
         }
 
+        public void setNombre(String nombre) {
+            this.nombre = nombre;
+        }
+
+        public void setApellido(String apellido) {
+            this.apellido = apellido;
+        }
+
+        public void setMatricula(String matricula) {
+            this.matricula = matricula;
+        }
+
         public void setCarrera(String carrera) {
             this.carrera = carrera;
         }
 
         @Override
+        public String toString() {
+            return
+        }
+
+
 
 
 
