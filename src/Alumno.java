@@ -4,15 +4,15 @@ public class Alumnos {
     private String primerApellido;
     private String segundoApellido;
     private String matricula;
-    private String carrera;
+    private String curso;
 
-        public Alumno(String primerNombre, String segundoNombre, String primerApellido, String segundoApellido, String matricula, String carrera) {
+        public Alumno(String primerNombre, String segundoNombre, String primerApellido, String segundoApellido, String matricula, String curso) {
         this.primerNombre = primerNombre;
         this.segundoNombre = segundoNombre;
         this.primerApellido = primerApellido;
         this.segundoApellido = segundoApellido;
         this.matricula = matricula;
-        this.carrera = carrera;
+        this.curso = curso;
 
         }
 
@@ -22,7 +22,7 @@ public class Alumnos {
             this.primerApellido = "Primer apellido del alumno";
             this.segundoApellido = "Segundo apellido del alumno";
             this.matricula = "Matrícula del alumno";
-            this.carrera = "Carrera del alumno";
+            this.curso = "Curso del alumno";
         }
 
         public String getPrimerNombre() {
@@ -43,8 +43,8 @@ public class Alumnos {
             return matricula;
         }
 
-        public String getCarrera() {
-            return carrera;
+        public String getCurso() {
+            return curso;
         }
 
         public void setPrimerNombre(String primerNombre) {
@@ -65,13 +65,14 @@ public class Alumnos {
             this.matricula = matricula;
         }
 
-        public void setCarrera(String carrera) {
-            this.carrera = carrera;
+        public void setCurso(String curso) {
+            this.curso = curso;
         }
 
         @Override
         public String toString() {
-            return
+            return "Nombre completo del alumno: " + primerNombre + " " + segundoNombre + " " + primerApellido + " " + segundoApellido + "\n" +
+                    "Matrícula: " + matricula + "\n" + "Curso: " + curso;
         }
 
 
