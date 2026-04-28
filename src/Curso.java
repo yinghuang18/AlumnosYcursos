@@ -33,6 +33,16 @@ public class Curso {
 
     }
 
+    public void eliminarAlumno(Alumno quitarAlumno) {
+        for (Alumno alumno : this.ListaAlumnos) {
+            if (alumno.getMatricula().equals(quitarAlumno.getMatricula())) {
+                this.ListaAlumnos.remove(quitarAlumno);
+                System.out.println("Alumno eliminado");
+                return;
+            }
+        }
+        System.out.println("El alumno no estpa registrado en el curso");
+    }
 
 
 }
