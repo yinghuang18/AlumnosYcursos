@@ -12,7 +12,10 @@ public class Alumnos {
         }
 
         public Alumno() {
-
+            this.nombre = "Nombre del alumno";
+            this.apellido = "Apellido del alumno";
+            this.matricula = "Matrícula del alumno";
+            this.carrera = "Carrera del alumno";
         }
 
         public String getNombre() {
@@ -34,6 +37,8 @@ public class Alumnos {
         public void setCarrera(String carrera) {
             this.carrera = carrera;
         }
+
+        @Override
 
 
 
