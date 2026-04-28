@@ -23,6 +23,18 @@ public class Alumnos {
             return apellido;
         }
 
+        public String getMatricula() {
+            return matricula;
+        }
+
+        public String getCarrera() {
+            return carrera;
+        }
+
+        public void setCarrera(String carrera) {
+            this.carrera = carrera;
+        }
+
 
 
 
