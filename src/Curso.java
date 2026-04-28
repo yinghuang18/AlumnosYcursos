@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 public class Curso {
     private String nombreCurso;
-    private ArrayList<Alumno> alumnos;
+    private ArrayList<Alumno> ListaAlumnos;
 
     public Curso(String nombreCurso) {
         this.nombreCurso = nombreCurso;
-        this.alumnos = new ArrayList<Alumno>();
+        this.ListaAlumnos = new ArrayList<Alumno>();
 
     }
 
@@ -13,12 +13,24 @@ public class Curso {
         return nombreCurso;
     }
 
-    public ArrayList<Alumno> getAlumnos() {
-        return alumnos;
+    public ArrayList<Alumno> getListaAlumnos() {
+        return ListaAlumnos;
     }
 
     public void setNombreCurso(String nombreCurso) {
         this.nombreCurso = nombreCurso;
+    }
+
+    public void agregarAlumno(Alumno alumnoNuevo) {
+        for (Alumno alumno : this.ListaAlumnos) {
+            if (alumno.getMatricula().equals(alumnoNuevo.getMatricula())) {
+                System.out.println("El alumno ya está registrado en el curso.");
+                return;
+            }
+            this.ListaAlumnos.add(alumnoNuevo);
+            System.out.println("Alumno agregado");
+        }
+
     }
 
 
