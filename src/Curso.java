@@ -54,5 +54,16 @@ public class Curso {
         System.out.println("El alumno no pertenece al curso");
     }
 
+    @Override
+    public String toString() {
+        String curso = "Curso: " + nombreCurso + "/n";
+        for (Alumno alumno : this.ListaAlumnos) {
+            curso += alumno.toString() + "\n";
+            return curso;
+        }
+        return "No hay alumnos registrados en el curso";
+
+    }
+
 
 }
