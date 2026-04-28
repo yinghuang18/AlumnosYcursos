@@ -1,29 +1,42 @@
 public class Alumnos {
-    private String nombre;
-    private String apellido;
+    private String primerNombre;
+    private String segundoNombre;
+    private String primerApellido;
+    private String segundoApellido;
     private String matricula;
     private String carrera;
-        public Alumno(String nombre, String apellido, String matricula, String carrera) {
-        this.nombre = nombre;
-        this.apellido = apellido;
+
+        public Alumno(String primerNombre, String segundoNombre, String primerApellido, String segundoApellido, String matricula, String carrera) {
+        this.primerNombre = primerNombre;
+        this.segundoNombre = segundoNombre;
+        this.primerApellido = primerApellido;
+        this.segundoApellido = segundoApellido;
         this.matricula = matricula;
         this.carrera = carrera;
 
         }
 
         public Alumno() {
-            this.nombre = "Nombre del alumno";
-            this.apellido = "Apellido del alumno";
+            this.primerNombre = "Primer nombre del alumno";
+            this.segundoNombre = "Segundo nombre del alumno";
+            this.primerApellido = "Primer apellido del alumno";
+            this.segundoApellido = "Segundo apellido del alumno";
             this.matricula = "Matrícula del alumno";
             this.carrera = "Carrera del alumno";
         }
 
-        public String getNombre() {
-            return nombre;
+        public String getPrimerNombre() {
+            return this.primerNombre;
+        }
+        public String getSegundoNombre() {
+            return this.segundoNombre;
         }
 
-        public String getApellido() {
-            return apellido;
+        public String getPrimerApellido() {
+            return this.primerApellido;
+        }
+        public String getSegundoApellido() {
+            return this.segundoApellido;
         }
 
         public String getMatricula() {
@@ -34,12 +47,18 @@ public class Alumnos {
             return carrera;
         }
 
-        public void setNombre(String nombre) {
-            this.nombre = nombre;
+        public void setPrimerNombre(String primerNombre) {
+            this.primerNombre = primerNombre;
+        }
+        public void setSegundoNombre(String segundoNombre) {
+            this.segundoNombre = segundoNombre;
         }
 
-        public void setApellido(String apellido) {
-            this.apellido = apellido;
+        public void setPrimerApellido(String primerApellido) {
+            this.primerApellido = primerApellido;
+        }
+        public void setSegundoApellido(String segundoApellido) {
+            this.segundoApellido = segundoApellido;
         }
 
         public void setMatricula(String matricula) {
