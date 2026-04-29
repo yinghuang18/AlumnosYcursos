@@ -27,10 +27,9 @@ public class Curso {
                 System.out.println("El alumno ya está registrado en el curso.");
                 return;
             }
-            this.ListaAlumnos.add(alumnoNuevo);
-            System.out.println("Alumno agregado");
         }
-
+        this.ListaAlumnos.add(alumnoNuevo);
+        System.out.println(alumnoNuevo + "\n" + "agregado");
     }
 
     public void eliminarAlumno(Alumno quitarAlumno) {
@@ -56,12 +55,15 @@ public class Curso {
 
     @Override
     public String toString() {
-        String curso = "Curso: " + nombreCurso + "/n";
+        if (this.ListaAlumnos.isEmpty()) {
+            return "No hay alumnos registrados en el curso";
+        }
+        String curso = "Curso: " + nombreCurso + "\n";
         for (Alumno alumno : this.ListaAlumnos) {
             curso += alumno.toString() + "\n";
-            return curso;
+
         }
-        return "No hay alumnos registrados en el curso";
+            return curso;
 
     }
 
