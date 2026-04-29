@@ -13,16 +13,18 @@ public class Launcher {
         curso.agregarAlumno(alumno4);
         curso.agregarAlumno(alumno5);
 
-        System.out.println("Lista inicial de alumnos:");
+        System.out.println("\n   Lista inicial de alumnos: \n");
         System.out.println(curso.toString());
 
-        System.out.println("Eliminar alumno3 de la lista");
+        System.out.println("\n   Eliminar alumno3 de la lista \n");
         curso.eliminarAlumno(alumno3);
-        System.out.println("Lista de alumnos después de eliminar alumno3:");
+
+        System.out.println("\n   Lista de alumnos después de eliminar alumno3: \n");
         System.out.println(curso.toString());
 
         System.out.println("Comprobar si alumno4 pertenece al curso:");
         curso.comprobarAlumno(alumno4);
+
         System.out.println("Comprobar si alumno3 pertenece al curso:");
         curso.comprobarAlumno(alumno3);
 
