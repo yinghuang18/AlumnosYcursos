@@ -27,10 +27,9 @@ public class Curso {
                 System.out.println("El alumno ya está registrado en el curso.");
                 return;
             }
-            this.ListaAlumnos.add(alumnoNuevo);
-            System.out.println("Alumno agregado");
         }
-
+        this.ListaAlumnos.add(alumnoNuevo);
+        System.out.println("Alumno agregado");
     }
 
     public void eliminarAlumno(Alumno quitarAlumno) {
